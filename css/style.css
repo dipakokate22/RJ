@@ -1,0 +1,129 @@
+/* Header Styles */
+*{
+    font-family: 'Exo', sans-serif;
+}
+.header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #184A45;
+    transition: 0.3s;
+}
+
+.main-nav {
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    color: #184A45;
+}
+
+.has-dropdown .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.has-dropdown:hover > .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown .dropdown {
+    left: 100%;
+    top: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 80px);
+        background: #fff;
+        margin: 0;
+        padding: 20px;
+        transition: 0.3s;
+        overflow-y: auto;
+    }
+
+    .main-nav.active {
+        left: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .has-dropdown .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        padding-left: 20px;
+        display: none;
+    }
+
+    .has-dropdown.active > .dropdown {
+        display: block;
+    }
+}
