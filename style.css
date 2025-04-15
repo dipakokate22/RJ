@@ -1899,7 +1899,7 @@ p.has-large-font-size {
 }
 .footer p {
 	color: #020202;
-	font-size:14px;
+	font-size:16px;
 }
 .footer-about {
 	padding-right: 20px;
@@ -1909,7 +1909,7 @@ p.has-large-font-size {
 }
 .footer-about .text-logo a {
     color: #020202;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
 }
 .footer-about .text {
@@ -1957,7 +1957,7 @@ p.has-large-font-size {
     padding: 0;
     margin: 0;
     background: transparent;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
 }
 .footer .f-link ul {
@@ -1983,7 +1983,7 @@ p.has-large-font-size {
 	border: none;
 	width: 100%;
 	position: relative !important;
-	font-size: 14px;
+	font-size: 16px;
 	border: 1px solid #020202;
 	line-height: 50px;
 	border-radius:0px;
@@ -2021,7 +2021,7 @@ p.has-large-font-size {
   margin-right: 15px;
 }
 .footer-news .single-f-news .content .title {
-  font-size: 14px;
+  font-size: 16px;
 }
 .footer-news .single-f-news .content .title a {
     color: #020202;
@@ -2031,7 +2031,7 @@ p.has-large-font-size {
 }
 .footer .footer-newsletter .address {
 	color: #020202;
-	font-size: 15px;
+	font-size: 16px;
 	margin-bottom: 20px;
 }
 .footer .single-f-news .post-meta i {
@@ -2046,7 +2046,7 @@ p.has-large-font-size {
 .footer .address-widget-list li a {
     font-weight: normal;
     color: #020202;
-    font-size: 15px;
+    font-size: 16px;
 }
 .footer .address-widget-list li i {
     width: 25px;
@@ -2057,7 +2057,7 @@ p.has-large-font-size {
     border: 1px solid #eee;
     text-align: center;
     border-radius: 100%;
-    font-size: 13px;
+    font-size: 16px;
     margin-right: 10px;
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
@@ -2109,7 +2109,7 @@ p.has-large-font-size {
 }
 .footer .copyright-content p {
     color: #4B4490;
-    font-size: 14px;
+    font-size: 16px;
 }
 .footer .copyright-content p span{
 	font-size:17px;
@@ -2574,9 +2574,9 @@ p.has-large-font-size {
 /*======================================
 	End Features CSS
 ========================================*/
-.about-us {
+/* .about-us {
 	padding: 70px 0 50px;
-}
+} */
 .about-us .modern-img-feature,
 .about-us .about-content{
 	margin-top:30px;
@@ -4834,7 +4834,7 @@ background: #4B4490;
     margin:50px 0px;
 }
 .video_img  {
-    margin: 40px 0px 0px 0px ;
+    margin: 20px 0px 0px 0px ;
 }
 .absolute-middle-center {
     left: 50%;
@@ -4847,7 +4847,7 @@ background: #4B4490;
     -o-transform: translateX(-50%) translateY(-50%);
   }
   .map {
-    margin-top: 50px;
+    margin-top: 1px;
   }
   .choose-item.mt-30.text-center {
     padding: 20px;
@@ -5370,7 +5370,7 @@ td {
 
 .client-section h1 {
     /* font-size: 2rem; */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
      /* font-size: 24px; */
      font-weight: bold;
      /* margin-bottom: 20px; */

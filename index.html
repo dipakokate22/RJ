@@ -63,8 +63,14 @@
 <!-- Swiper.js Script -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+<style>
+	*{
+font-family: 'Exo', sans-serif;
+}
+</style>
+
 	</head>
-	<body id="bg" style="">
+	<body id="bg" style="font-family: 'Exo', sans-serif;">
 		
 		<!-- Boxed Layout -->
 		<div id="page" class="site"> 
@@ -246,58 +252,252 @@
 		
 		
 		<!-- Video Feature -->
-		<section class="video-feature side overlay section-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-12">
-						<div class="img-feature ">
-							<img src="img/Bags/why-us2.jpg" alt="Video Thumbnail">
-							<div class="video-play">
-								<a href="img/Video/HomepageVideo.mp4" class="video video-popup mfp-iframe">
-									<i class="fa fa-play"></i>
-								</a>
-								<div class="waves-block">
-									<div class="waves wave-1"></div>
-									<div class="waves wave-2"></div>
-									<div class="waves wave-3"></div>
-								</div>
-							</div>  <!-- <span>Watch 2 minutes</span> -->
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-12">
-						<div class="features-main ">
-							<div class="title">
-								<h2>"What Sets Us Apart?"</h2>  <br>
-								<p>We are the trusted partner for industries worldwide, providing high-quality, durable, and reliable bulk 
-									packaging solutions. From FIBC Bulk Bags to PP Woven Sacks, we cater to diverse sectors, ensuring strength, 
-									safety, and sustainability in material handling.
-								</p>  <br> <br>
-								<p> Our mission is to deliver top-notch industrial packaging solutions, helping businesses optimize
-								   storage, transportation, and efficiency with our premium-quality bags.
-								</p>  <br> 
-								<p style="color: #184A45"><b>Rohit Jain <span>- Founder</span></b></p>
-							</div>
-							<br>
-							<div class="feature-btn">
-								<a href="about.html" class="bizwheel-btn theme-2">Know More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<!-- Video Feature -->
+<section class="video-feature section-bg">
+    <div class="container" style="max-width: 80%;">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                <div class="video-wrapper">
+                    <div class="video-thumbnail">
+                        <img src="img/Bags/why-us2.jpg" alt="Video Thumbnail" class="img-fluid rounded-lg">
+                        <div class="video-play-button">
+                            <a href="img/Video/HomepageVideo.mp4" class="video-popup mfp-iframe">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <div class="waves-block">
+                                <div class="waves wave-1"></div>
+                                <div class="waves wave-2"></div>
+                                <div class="waves wave-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="content-wrapper">
+                    <h2 class="section-title mb-4">"What Sets Us Apart?"</h2>
+                    <div class="description mb-4">
+                        <p><b>We are the trusted partner for industries worldwide, providing high-quality, durable, and reliable bulk packaging solutions. From FIBC Bulk Bags to PP Woven Sacks, we cater to diverse sectors, ensuring strength, safety, and sustainability in material handling.</b></p>
+                        <p><b>Our mission is to deliver top-notch industrial packaging solutions, helping businesses optimize storage, transportation, and efficiency with our premium-quality bags.</b></p>
+                    </div>
+                    <div class="founder-quote">
+                        <p class="founder-name"><b>Rohit Jain <span style="margin-left: 10px;">- Founder</span> </b></p>
+                    </div>
+                    <div class="cta-button mt-4">
+                        <a href="about.html" class="theme-btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.video-feature {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.video-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.video-thumbnail {
+    position: relative;
+    padding-bottom: 75%;
+}
+
+.video-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.video-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.video-play-button a {
+    width: 80px;
+    height: 80px;
+    background: #4B4490;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.video-play-button a:hover {
+    background: #2A4F74;
+    transform: scale(1.1);
+}
+
+.waves-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #4B4490;
+    border-radius: 50%;
+    animation: waves 2s ease-out infinite;
+}
+
+.wave-2 { animation-delay: 0.5s; }
+.wave-3 { animation-delay: 1s; }
+
+@keyframes waves {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.content-wrapper {
+    padding-left: 40px;
+	padding-right: 20px;
+}
+
+.section-title {
+    color: #2A4F74;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.description p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.founder-quote {
+    margin: 25px 0;
+}
+
+.founder-name {
+    color: #4B4490;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.founder-name span {
+    color: #666;
+    font-weight: normal;
+}
+
+.theme-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #4B4490;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+    background: #2A4F74;
+    transform: translateY(-3px);
+    color: white;
+    box-shadow: 0 5px 15px rgba(42, 79, 116, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .video-feature {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 991px) {
+    .content-wrapper {
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .video-thumbnail {
+        padding-bottom: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-feature {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .video-play-button a {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .description p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-thumbnail {
+        padding-bottom: 75%;
+    }
+    
+    .content-wrapper {
+        padding: 15px 0;
+    }
+}
+</style>
 		<!--/ End Video Feature -->
 
 		<!-- global market section -->
 		<div class="video_section col-lg-12  col-md-12  col-12">
 			<div class="section-title default text-center">
 				<div class="section-top">
-					<h1><b>Global Market</b></h1>
+					<h1 style="font-size: 35px;"><b>Global Market</b></h1>
 				</div>
 				<!-- <div class="linebottom"><img alt="Products" title="Products" src="img/underline.png" data-no-retina=""></div> -->
-				<div class="section-bottom">
-					<div class="text">
-						<p>RJ International is one of the leading manufacturers & exporters for FIBC, PP Woven, Huge Jumbo, Garbage and waste bags for the different industrial sectors.</p>
+				<div class="section-bottom" style="margin-top: 10px;">
+					<div class="text" >
+						<p style="font-size: 18px; line-height: 30px;">RJ International is one of the leading manufacturers & exporters for FIBC, PP Woven, <br> Huge Jumbo, Garbage and waste bags for the different industrial sectors.</p>
 					</div>
 				</div>
 				<div class="video">
@@ -324,11 +524,11 @@
 			<div class="container">
 				<div class="section-title default text-center">
 					<div class="section-top">
-						<h1><b>Our Products</b></h1>
+						<h1 style="font-size: 35px;"><b>Our Products</b></h1>
 					</div>
 					<div class="section-bottom">
 						<div class="text">
-							<p>Discover our comprehensive range of high-quality packaging solutions designed to meet your specific industrial needs.</p>
+							<p style="font-size: 18px; line-height: 30px; margin-top: 10px;">Discover our comprehensive range of high-quality packaging solutions <br> designed to meet your specific industrial needs.</p>
 						</div>
 					</div>
 				</div>
@@ -384,7 +584,7 @@
 					<div class="col-lg-4 col-md-6 col-12 mb-4">
 						<div class="product-card" style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s ease;">
 							<div class="product-image" style="height: 300px; position: relative; overflow: hidden;">
-								<img src="img/Bags/Garden.jpg" alt="Garden Bags" style="width: 100%; height: 100%; object-fit: contain; padding: 20px; transition: all 0.4s ease;">
+								<img src="img/Bags/garden2.jpg" alt="Garden Bags" style="width: 100%; height: 100%; object-fit: contain; padding: 20px; transition: all 0.4s ease;">
 							</div>
 							<div class="product-content" style="padding: 25px; text-align: center;">
 								<h3 style="color: #2A4F74; font-size: 24px; font-weight: 700; margin-bottom: 15px; font-family: 'Exo', sans-serif;"><a href="gardenbag.html" style="color: inherit; text-decoration: none;">Garden Bags</a></h3>
@@ -408,43 +608,187 @@
 			</div>
 
 			<style>
+				/* New Animation Keyframes */
+				@keyframes tiltEffect {
+					0% { transform: rotateX(0deg) rotateY(0deg); }
+					50% { transform: rotateX(5deg) rotateY(5deg); }
+					100% { transform: rotateX(0deg) rotateY(0deg); }
+				}
+
+				@keyframes neonGlow {
+					0% { box-shadow: 0 0 5px #4B4490, 0 0 10px #4B4490, 0 0 15px #4B4490; }
+					50% { box-shadow: 0 0 10px #4B4490, 0 0 20px #4B4490, 0 0 30px #4B4490; }
+					100% { box-shadow: 0 0 5px #4B4490, 0 0 10px #4B4490, 0 0 15px #4B4490; }
+				}
+
+				@keyframes morphGradient {
+					0% { background-position: 0% 50%; }
+					50% { background-position: 100% 50%; }
+					100% { background-position: 0% 50%; }
+				}
+
+				@keyframes slideInFromLeft {
+					0% { transform: translateX(-100%); opacity: 0; }
+					100% { transform: translateX(0); opacity: 1; }
+				}
+
+				/* Products Section New Effects */
 				.product-card {
-					position: relative;
-					overflow: hidden;
-					
+					perspective: 1000px;
+					transform-style: preserve-3d;
+					transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 				}
 
 				.product-card:hover {
-					transform: translateY(-10px);
-					box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+					animation: tiltEffect 3s ease-in-out infinite;
 				}
 
-				.product-card:hover img {
-					transform: scale(1.1);
+				.product-image {
+					position: relative;
+					overflow: hidden;
+					transform-style: preserve-3d;
 				}
 
-				.view-btn:hover {
-					background: #2A4F74;
-					transform: translateY(-3px);
-					box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+				.product-image::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+					transform: translateX(-100%);
+					transition: transform 0.6s ease;
 				}
 
+				.product-card:hover .product-image::before {
+					transform: translateX(100%);
+				}
+
+				.product-content {
+					background: linear-gradient(135deg, #ffffff, #f8f9fa);
+					background-size: 200% 200%;
+					animation: morphGradient 5s ease infinite;
+				}
+
+				.view-btn {
+					position: relative;
+					overflow: hidden;
+					transition: all 0.4s ease;
+				}
+
+				.view-btn::before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 0;
+					height: 0;
+					background: rgba(255,255,255,0.2);
+					border-radius: 50%;
+					transform: translate(-50%, -50%);
+					transition: width 0.6s ease, height 0.6s ease;
+				}
+
+				.view-btn:hover::before {
+					width: 300px;
+					height: 300px;
+				}
+
+				/* Clients Section New Effects */
+				.swiper-slide {
+					position: relative;
+					overflow: hidden;
+					transition: all 0.5s ease;
+				}
+
+				.swiper-slide::after {
+					content: '';
+					position: absolute;
+					inset: 0;
+					background: linear-gradient(45deg, rgba(75, 68, 144, 0.1), rgba(42, 79, 116, 0.1));
+					opacity: 0;
+					transition: opacity 0.4s ease;
+				}
+
+				.swiper-slide:hover::after {
+					opacity: 1;
+				}
+
+				.swiper-slide img {
+					transition: all 0.5s ease;
+					filter: grayscale(100%) brightness(0.8);
+				}
+
+				.swiper-slide:hover img {
+					filter: grayscale(0%) brightness(1);
+					transform: scale(1.1) rotate(2deg);
+				}
+
+				/* Our Presence Section New Effects */
+				.section-title {
+					position: relative;
+					overflow: hidden;
+				}
+
+				.section-title h1 {
+					position: relative;
+					display: inline-block;
+				}
+
+				.section-title h1::after {
+					content: '';
+					position: absolute;
+					bottom: -5px;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background: linear-gradient(90deg, #4B4490, #2A4F74, #4B4490);
+					background-size: 200% 100%;
+					animation: morphGradient 3s ease infinite;
+				}
+
+				.map {
+					position: relative;
+					overflow: hidden;
+					border-radius: 15px;
+					transition: all 0.5s ease;
+				}
+
+				.map::before {
+					content: '';
+					position: absolute;
+					inset: 0;
+					background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+					transform: translateX(-100%);
+					transition: transform 0.6s ease;
+				}
+
+				.map:hover::before {
+					transform: translateX(100%);
+				}
+
+				.map img {
+					transition: all 0.5s ease;
+				}
+
+				.map:hover img {
+					transform: scale(1.05);
+					filter: brightness(1.1);
+				}
+
+				/* Responsive Adjustments */
 				@media (max-width: 768px) {
-					.section-title {
-						font-size: 32px;
+					.product-card:hover {
+						animation: tiltEffect 2s ease-in-out infinite;
 					}
 
-					.section-description {
-						font-size: 16px;
-						padding: 0 20px;
+					.swiper-slide:hover img {
+						transform: scale(1.05) rotate(1deg);
 					}
 
-					.product-card {
-						margin-bottom: 30px;
-					}
-
-					.product-image {
-						height: 250px;
+					.map:hover img {
+						transform: scale(1.02);
 					}
 				}
 			</style>
@@ -500,7 +844,7 @@
 		</section> -->
 
 		<section class="client-section">
-			<h1>Our Clients</h1>
+			<h1 style="font-size: 35px;">Our Clients</h1>
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide"><img src="img/Clients/20Microns-removebg-preview.png" alt="Client 1">
@@ -547,16 +891,16 @@
 
 		
 	<!--  Our Presence section -->	
-		<div class="container">
+		<div class="container" style="max-width: 80%;">
 		<div class="col-lg-12  col-md-12  col-12">
 			<div class="section-title default text-center">
 				<div class="section-top">
-					<h1><b>Our Presence</b></h1>
+					<h1 style="font-size: 35px;"><b>Our Presence</b></h1>
 				</div>
 				<!-- <div class="linebottom" style="color:#D6C7AE ;"><img alt="Products" title="Products" src="img/underline.png" data-no-retina=""></div> -->
 				<div class="section-bottom">
 					<div class="text">
-						<p>RJ International, Indore (MP) – A leading manufacturer and exporter of FIBC/Bulk Bags, Jumbo Bags, Waste Bags, <br>Garden Bags, and PP Woven Fabric,  committed to delivering superior quality and innovative packaging solutions worldwide. </p>
+						<p style="font-size: 18px; margin-top: 10px;">RJ International, Indore (MP) – A leading manufacturer and exporter of FIBC/Bulk Bags, Jumbo Bags, Waste Bags, <br>Garden Bags, and PP Woven Fabric,  committed to delivering superior quality and innovative packaging solutions worldwide. </p>
 					</div>
 					</div>
 					<div class="map">
@@ -688,7 +1032,176 @@
 		<!-- Owl Carousel JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-		
+		<style>
+			/* Common Animation Keyframes */
+			@keyframes float {
+				0% { transform: translateY(0px); }
+				50% { transform: translateY(-10px); }
+				100% { transform: translateY(0px); }
+			}
+
+			@keyframes shine {
+				0% { background-position: -100% 0; }
+				100% { background-position: 200% 0; }
+			}
+
+			@keyframes pulse {
+				0% { box-shadow: 0 0 0 0 rgba(75, 68, 144, 0.1); }
+				70% { box-shadow: 0 0 0 20px rgba(75, 68, 144, 0); }
+				100% { box-shadow: 0 0 0 0 rgba(75, 68, 144, 0); }
+			}
+
+			/* Products Section Styles */
+			.single-product {
+				position: relative;
+				overflow: hidden;
+				transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+				background: rgba(255, 255, 255, 0.8);
+				backdrop-filter: blur(10px);
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+			}
+
+			.single-product:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+			}
+
+			.single-product img {
+				transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+				transform: scale(1);
+			}
+
+			.single-product:hover img {
+				transform: scale(1.1);
+			}
+
+			.single-product .product-content {
+				position: relative;
+				z-index: 1;
+				background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+				backdrop-filter: blur(10px);
+				transition: all 0.4s ease;
+			}
+
+			.single-product:hover .product-content {
+				background: linear-gradient(135deg, rgba(75, 68, 144, 0.1), rgba(42, 79, 116, 0.1));
+			}
+
+			.single-product .title {
+				position: relative;
+				padding-bottom: 15px;
+			}
+
+			.single-product .title::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 50px;
+				height: 2px;
+				background: linear-gradient(90deg, #4B4490, #2A4F74);
+				transition: all 0.4s ease;
+			}
+
+			.single-product:hover .title::after {
+				width: 100%;
+			}
+
+			/* Clients Section Styles */
+			.single-client {
+				position: relative;
+				overflow: hidden;
+				transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+				padding: 20px;
+			}
+
+			.single-client::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background: rgba(255, 255, 255, 0.1);
+				backdrop-filter: blur(10px);
+				border-radius: 15px;
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				transition: all 0.4s ease;
+			}
+
+			.single-client:hover::before {
+				background: rgba(255, 255, 255, 0.2);
+				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+			}
+
+			.single-client img {
+				transition: all 0.5s ease;
+				filter: grayscale(100%);
+			}
+
+			.single-client:hover img {
+				filter: grayscale(0%);
+				transform: scale(1.1);
+			}
+
+			/* Our Presence Section Styles */
+			.presence-item {
+				position: relative;
+				overflow: hidden;
+				border-radius: 15px;
+				transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+				background: rgba(255, 255, 255, 0.8);
+				backdrop-filter: blur(10px);
+				border: 1px solid rgba(255, 255, 255, 0.3);
+			}
+
+			.presence-item:hover {
+				transform: translateY(-10px) scale(1.02);
+				box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+			}
+
+			.presence-icon {
+				position: relative;
+				z-index: 1;
+				animation: float 3s ease-in-out infinite;
+			}
+
+			.presence-content {
+				position: relative;
+				z-index: 1;
+				transition: all 0.4s ease;
+			}
+
+			.presence-item:hover .presence-content {
+				transform: translateY(-5px);
+			}
+
+			.presence-item::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 200%;
+				height: 100%;
+				background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+				transform: skewX(-15deg);
+				animation: shine 3s infinite;
+			}
+
+			/* Responsive Adjustments */
+			@media only screen and (max-width: 768px) {
+				.single-product:hover,
+				.presence-item:hover {
+					transform: translateY(-5px);
+				}
+				
+				.single-client:hover img {
+					transform: scale(1.05);
+				}
+				
+				.presence-icon {
+					animation: float 4s ease-in-out infinite;
+				}
+			}
+		</style>
 		
 	</body>
 
