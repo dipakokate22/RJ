@@ -389,7 +389,8 @@ p{
 }
 .slicknav_nav li {
 	border-bottom: 1px solid #ebebeb;
-	line-height: 30px;
+	line-height: 14px;
+	font-size: 16px;
 }
 .slicknav_nav li:last-child{
 	border:none;
@@ -419,22 +420,23 @@ p{
 }
 .slicknav_nav {
 	clear: both;
-	color: #fff;
+	color: #2A4F74;
 	margin: 0;
-	background: transparent;
+	background: #fff;
 	padding-top: 15px;
 }
 .slicknav_nav li a{
 	margin: 0;
-	color: #333;
-	background: transparent;
+	color: #2A4F74;
+	background: #fff;
 	overflow: hidden;
+	font-size: 16px;
 }
 .slicknav_nav li a i{
 	display:none;
 }
 .slicknav_nav li a:hover{
-	color:#1A9F68;
+	color:#0d6efd;
 	background:transparent;
 }
 .slicknav_nav li:hover{
@@ -444,11 +446,11 @@ p{
 	background:transparent;
 }
 .slicknav_nav li .dropdown li a{
-	color:#555;
+	color:#2A4F74;
 	background:transparent;
 }
 .slicknav_nav li .dropdown li a:hover{
-	color:#1A9F68;
+	color:#0d6efd;
 	background:transparent;
 }
 .slicknav_nav li .slicknav_item{
@@ -464,7 +466,7 @@ p{
 	padding-bottom:0px;
 }
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #1A9F68;
+	background-color: #0d6efd;
 	box-shadow: none;
 	text-shadow: none;
 }
@@ -888,3 +890,4 @@ p{
 	margin-bottom: 50px;
   }
 }
+
