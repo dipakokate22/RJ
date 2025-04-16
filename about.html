@@ -220,24 +220,54 @@
 		
 		<!-- Breadcrumb -->
 		<div class="breadcrumbs overlay" style="background-image:url('img/logo/breadcrumb2.jpeg')">
-			<div class="container">
-				<div class="row" style="margin-left: 200px;">
-					<div class="col-12">
-						<div class="bread-inner">
-							<!-- Bread Menu -->
-							<div class="bread-menu">
-								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="about.html">About Us</a></li>
-								</ul>
-							</div>
-							<!-- Bread Title -->
-							<div class="bread-title"><h2>Company Profile</h2></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="container">
+                <div class="row breadcrumb-row">
+                    <div class="col-12">
+                        <div class="bread-inner">
+                            <!-- Bread Menu -->
+                            <div class="bread-menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                </ul>
+                            </div>
+                            <!-- Bread Title -->
+                            <div class="bread-title"><h2>Company Profile</h2></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+        /* Desktop styles */
+        .breadcrumb-row {
+            margin-left: 200px;
+        }
+        
+        /* Mobile styles */
+        @media (max-width: 767px) {
+            .breadcrumb-row {
+                margin-left: 0;
+            }
+        
+            .bread-inner {
+                padding-left: 15px;
+                text-align: left;
+            }
+        
+            .bread-menu ul {
+                padding-left: 0;
+                margin-left: 0;
+            }
+        
+            .bread-title h2 {
+                font-size: 24px;
+                text-align: left;
+                margin-left: 0;
+            }
+        }
+        </style>
 		<!-- / End Breadcrumb -->
 		
 		<!-- About Us -->
@@ -380,6 +410,70 @@
     opacity: 1;
     color: #2A4F74;
 }
+
+@media (max-width: 767px) {
+    .about-us.section-space .row {
+        padding: 30px 15px !important;
+        margin: 0;
+    }
+
+    .about-hero-content {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .about-hero-content .section-subtitle {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 24px !important;
+        line-height: 1.3;
+        margin: 15px 0;
+    }
+
+    .about-hero-content p {
+        font-size: 16px !important;
+        line-height: 1.6;
+    }
+
+    .about-image-wrapper {
+        margin-top: 30px;
+    }
+
+    .main-image1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .experience-badge {
+        width: 90px;
+        height: 90px;
+        bottom: -15px;
+        right: -15px;
+    }
+
+    .experience-badge h3 {
+        font-size: 20px;
+    }
+
+    .experience-badge p {
+        font-size: 12px;
+    }
+}
+
+/* Tablet view adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-us.section-space .row {
+        padding: 40px 30px !important;
+    }
+
+    .about-hero-content h1 {
+        font-size: 28px !important;
+    }
+}
+</style>
 					</style>
 
 				<!-- end of about us section -->	
@@ -509,7 +603,7 @@
     color: #2e2751;
     font-size: 16px;
     text-transform: uppercase;
-    margin-bottom: -20px;  /* Reduced from previous value */
+    margin-bottom: 20px;  /* Reduced from previous value */
     display: block;
 }
 
@@ -517,9 +611,9 @@
     font-size: 32px;
     font-weight: 600;
     color: #333;
-    margin-top: -10px;    
+    margin-top: 10px;    
     margin-bottom: 25px;
-    line-height: 1.2;
+    line-height: 1.4;
     text-align: left;
     margin-left: 0;
     padding-left: 0;
@@ -667,13 +761,21 @@
         height: 300px;
     }
 
-    .section-title {
-        font-size: 36px;
+    .section-subtitle {
+        margin-bottom: 15px;
+        font-size: 14px;
     }
 
-	.company-content {
+    .section-title {
+        font-size: 28px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    .company-content {
         padding-left: 20px;
-        padding-top: 40px; /* Add top padding for mobile view */
+        padding-top: 20px;
     }
 }
 
@@ -702,6 +804,11 @@
 
     .section-title {
         font-size: 32px;
+    }
+
+    .section-subtitle {
+        margin-top: 15px;
+        font-size: 14px;
     }
 
 	.company-features {
@@ -1039,494 +1146,385 @@ function showCompanyTab(tab) {
 
         <!--  3 characteristics -->
         
-		<section class="benefits-section">
-			<div class="container">
-				<div class="section">
-					<!-- Left side image + labels -->
-					<div class="left-side">
-						<div class="image-stack">
-							<div class="image-group">
-								<img src="img/about/benefit2.jpg" alt="Building Exterior" class="main-image image-1">
-								<img src="img/about/2.jpg" alt="Modern Interior" class="main-image image-2">
-								<img src="img/about/3.jpg" alt="Kitchen Design" class="main-image image-3">
-							</div>
-						</div>
-						<div class="badge badge-1"><div class="badge-icon">✓</div> Reliable Supply Chain </div>
-						<div class="badge badge-2"><div class="badge-icon">✓</div> Sustainable Practices</div>
-						<div class="badge badge-3"><div class="badge-icon">✓</div> Global Reach, Local Expertise </div>
-						<div class="badge badge-4"><div class="badge-icon">✓</div>  Innovative Manufacturing Techniques </div>
-					</div>
+        <section class="bsec-wrapper">
+            <div class="bsec-container">
+              <div class="bsec-content">
+                <div class="bsec-left">
+                  <div class="bsec-image-stack">
+                    <div class="bsec-image-group">
+                      <img src="img/about/benefit2.jpg" alt="Building Exterior" class="bsec-main-image bsec-image1">
+                      <img src="img/about/2.jpg" alt="Modern Interior" class="bsec-main-image bsec-image2">
+                      <img src="img/about/3.jpg" alt="Kitchen Design" class="bsec-main-image bsec-image3">
+                    </div>
+                  </div>
+                  <div class="bsec-badge bsec-badge1"><div class="bsec-badge-icon">✓</div> Reliable Supply Chain </div>
+                  <div class="bsec-badge bsec-badge2"><div class="bsec-badge-icon">✓</div> Sustainable Practices</div>
+                  <div class="bsec-badge bsec-badge3"><div class="bsec-badge-icon">✓</div> Global Reach, Local Expertise </div>
+                  <div class="bsec-badge bsec-badge4"><div class="bsec-badge-icon">✓</div> Innovative Manufacturing Techniques </div>
+                </div>
+        
+                <div class="bsec-right">
+                  <span class="bsec-subtitle"><b> WHY CHOOSE US </b></span>
+                  <div class="bsec-cards">
+                    <div class="bsec-card">
+                      <div class="bsec-card-icon">
+                        <span>🛡</span>
+                        <h3>Resistant and Safe</h3>
+                      </div>
+                      <ul class="bsec-list">
+                        <li>Built for strength and reliability, carrying up to 1000x own weight</li>
+                        <li>Advanced design ensures complete containment</li>
+                        <li>Secure and durable construction for safety</li>
+                      </ul>
+                    </div>
+                    <div class="bsec-card">
+                      <div class="bsec-card-icon">
+                        <span>♻</span>
+                        <h3>Recyclable and Reusable</h3>
+                      </div>
+                      <ul class="bsec-list">
+                        <li>100% recyclable polypropylene construction</li>
+                        <li>Multiple reuse capability reduces waste</li>
+                        <li>Eco-friendly packaging solution</li>
+                      </ul>
+                    </div>
+                    <div class="bsec-card">
+                      <div class="bsec-card-icon">
+                        <span>🔄</span>
+                        <h3>Flexible and Easy to Use</h3>
+                      </div>
+                      <ul class="bsec-list">
+                        <li>Space-efficient compact folding design</li>
+                        <li>Hassle-free filling and emptying process</li>
+                        <li>Integrated lifting system for better efficiency</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
 		
-					<!-- Right side content -->
-					<div class="right-side">
-						<span class="section-subtitle"> <b> WHY CHOOSE US </b> </span>
-						<!-- <h2 class="section-title">Discover What Sets Our Real Estate Expertise Apart</h2> -->
-						<!-- <p class="section-description">Our experienced professionals, backed by deep industry knowledge, partner with you through every stage of your project to deliver excellence and innovation.</p> -->
-		
-						<div class="benefit-cards">
-							<div class="benefit-card">
-								<div class="card-icon">
-									<span>🛡️</span>
-									<h3>Resistant and Safe</h3>
-								</div>
-								<ul class="benefit-list">
-									<li style="font-size: 17px;">Built for strength and reliability, carrying up to 1000x own weight</li>
-									<li style="font-size: 17px;">Advanced design ensures complete containment</li>
-									<li style="font-size: 17px;">Secure and durable construction for safety</li>
-								</ul>
-							</div>
-							<div class="benefit-card">
-								<div class="card-icon">
-									<span>♻️</span>
-									<h3>Recyclable and Reusable</h3>
-								</div>
-								<ul class="benefit-list">
-									<li style="font-size: 17px;">100% recyclable polypropylene construction</li>
-                                    <li style="font-size: 17px;">Multiple reuse capability reduces waste</li>
-                                    <li style="font-size: 17px;">Eco-friendly packaging solution</li>
-								</ul>
-							</div>
-							<div class="benefit-card">
-								<div class="card-icon"> 
-									<span>🔄</span>
-									<h3>Flexible and Easy to Use</h3>
-								</div>
-								<ul class="benefit-list">
-									<li style="font-size: 17px;">Space-efficient compact folding design</li>
-									<li style="font-size: 17px;">Hassle-free filling and emptying process</li>
-									<li style="font-size: 17px;">Integrated lifting system for better efficiency</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<style>
-		.benefits-section {
-			padding: 50px 0;
-			background: #fff;
-			position: relative;
-			overflow: hidden;
-			font-family: 'Open Sans', sans-serif;
-		}
-		
-		.section {
+		  <style>
+            /* * {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
+        
+            body {
+              font-family: 'Open Sans', sans-serif;
+              background: #fff;
+            } */
+        
+            .bsec-wrapper {
+    padding: 50px 20px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+        
+.bsec-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+        
+.bsec-content {
     display: flex;
-    gap: 80px;
+    gap: 60px;
     align-items: stretch;
     min-height: 600px;
 }
-		
-.left-side {
-    flex: 1;
-    position: relative;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-}
-		
-.image-stack {
-    position: relative;
-    height: 100%;
-    min-height: 550px;
-    width: 100%;
-    background: #f0f7ff;
-    border-radius: 20px;
-}
-		
-.image-group {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-		
-.main-image {
-    position: absolute;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    transition: all 0.5s ease;
-    object-fit: cover;
-}
-		
-.image-1 {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-		
-.image-2 {
-    width: 45%;
-    height: 200px;
-    top: -30px;
-    right: -30px;
-    z-index: 2;
-}
-		
-.image-3 {
-    width: 45%;
-    height: 200px;
-    bottom: -30px;
-    left: -30px;
-    z-index: 2;
-}
-		
-.badge {
-    position: absolute;
-    background: white;
-    padding: 12px 20px;
-    border-radius: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-    z-index: 3;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    animation: float 3s ease-in-out infinite;
-}
-		
-.badge-1 { 
-    top: 15%; 
-    right: -5%;
-    animation-delay: 0s;
-}
-
-.badge-2 { 
-    top: 40%; 
-    left: -5%;
-    animation-delay: 0.5s;
-}
-
-.badge-3 { 
-    bottom: 35%; 
-    right: -5%;
-    animation-delay: 1s;
-}
-
-.badge-4 { 
-    bottom: 10%; 
-    left: 10%;
-    animation-delay: 1.5s;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-		
-		.badge-icon {
-			width: 20px;
-			height: 20px;
-			background: #0d6efd;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: white;
-			font-size: 12px;
-		}
-		
-		.right-side {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-		
-		.section-subtitle {
-			color: #2e2751;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-    display: inline-block;
-    position: relative;
-    padding: 8px 20px;
-    background: rgba(75, 68, 144, 0.08);
-    border-radius: 30px;
-    transition: all 0.4s ease;
-    overflow: hidden;
-    cursor: pointer;
-	width: fit-content;
-}
-
-.section-subtitle::before {
-	content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.6),
-        transparent
-    );
-    transition: 0.6s;
-}
-		
-		.section-title {
-			font-size: 36px;
-			font-weight: 700;
-			color: #1a1a1a;
-			margin-bottom: 15px;
-			line-height: 1.3;
-		}
-		
-		.section-description {
-			color: #666;
-			font-size: 22px;
-			line-height: 1.7;
-			margin-bottom: 35px;
-		}
-		
-		.benefit-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 100%;
-    justify-content: center;
-}
-		
-.benefit-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #eee;
-    transition: all 0.3s ease;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-		
-.card-icon {
-	display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 0;
-}
-
-.card-icon span {
-    background: #f0f7ff;
-    width: 45px;
-    height: 45px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    color: #0d6efd;
-    transition: all 0.3s ease;
-	width: 35px;
-    height: 35px;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-		
-.card-icon h3 {
-    font-size: 22px;
-    color: #1a1a1a;
-    font-weight: 600;
-    margin: 0;
-}
-
-.benefit-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-	font-size: 14px;
-}
-
-.benefit-list li {
-    color: #666;
-    padding-left: 25px;
-    position: relative;
-    margin-bottom: 8px;
-    line-height: 1.4;
-    transition: all 0.3s ease;
-	font-size: 14px;
-}
-
-.benefit-list li:last-child {
-    margin-bottom: 0;
-}
-
-.benefit-list li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: #0d6efd;
-    transition: all 0.3s ease;
-}
-
-		/* .benefit-card h3 {
-			font-size: 18px;
-			color: #1a1a1a;
-			margin-bottom: 10px;
-			font-weight: 600;
-		} */
-		
-		/* .benefit-card p {
-			color: #666;
-			font-size: 14px;
-			line-height: 1.6;
-			margin-bottom: 15px;
-		} */
-		
-		/* .explore-link {
-			color: #0d6efd;
-			font-weight: 600;
-			font-size: 14px;
-			text-decoration: none;
-			display: flex;
-			align-items: center;
-			gap: 5px;
-		} */
-		
-		/* Hover Effects */
-		.main-image:hover {
-			transform: scale(1.02);
-		}
-		
-		.badge:hover {
-			transform: translateY(-5px) scale(1.05);
-            background: #0d6efd;
-            color: white;
-		}
-		
-		.badge:hover .badge-icon {
-			background: white;
-			color: #0d6efd;
-		}
-		
-		.benefit-card:hover {
-    background: #f8faff;
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-}
-
-.benefit-card:hover .card-icon span {
-    background: #0d6efd;
-    color: white;
-    transform: rotate(10deg);
-}
-
-.benefit-card:hover .benefit-list li {
-    color: #333;
-    transform: translateX(5px);
-}
-
-.benefit-card:hover .benefit-list li::before {
-    transform: translateX(3px);
-}
-
-
-.benefit-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 0;
-    background: #0d6efd;
-    transition: all 0.3s ease;
-}
-
-.benefit-card:hover::after {
-    height: 100%;
-}
-
-.section-subtitle:hover {
-    background: rgba(75, 68, 144, 0.15);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(75, 68, 144, 0.2);
-}
-
-.section-subtitle:hover::before {
-    left: 100%;
-}
-
-.section-subtitle b {
-    position: relative;
-    z-index: 1;
-    color: #2e2751;
-    transition: color 0.3s ease;
-	white-space: nowrap;
-}
-
-.section-subtitle:hover b {
-    opacity: 1;
-	color: #2A4F74;
-}
-		
-		.explore-link:hover .arrow {
-			transform: translateX(5px);
-		}
-		
-		@media (max-width: 991px) {
-			.section {
-        flex-direction: column;
-        gap: 50px;
-        min-height: auto;
-    }
-			
-			.image-stack {
-				min-height: 450px;
-			}
-
-			.badge {
-                padding: 10px 15px;
-                font-size: 12px;
+        
+            .bsec-left {
+              flex: 1;
+              position: relative;
+              padding: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
-		}
-		
-		@media (max-width: 768px) {
-			.benefits-section {
-				padding: 60px 0;
-			}
-			
-			.image-stack {
-				height: 450px;
-			}
-			
-			.section-title {
-				font-size: 28px;
-			}
-			.benefit-card {
-        padding: 20px;
+        
+            .bsec-image-stack {
+              position: relative;
+              height: 100%;
+              min-height: 550px;
+              width: 100%;
+              background: #f0f7ff;
+              border-radius: 20px;
+            }
+        
+            .bsec-image-group {
+              position: relative;
+              height: 100%;
+              width: 100%;
+            }
+        
+            .bsec-main-image {
+              position: absolute;
+              border-radius: 15px;
+              box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+              transition: all 0.5s ease;
+              object-fit: cover;
+            }
+        
+            .bsec-image1 { width: 100%; height: 100%; top: 0; left: 0; z-index: 1; }
+            .bsec-image2 { width: 45%; height: 200px; top: -30px; right: -30px; z-index: 2; }
+            .bsec-image3 { width: 45%; height: 200px; bottom: -30px; left: -30px; z-index: 2; }
+        
+            .bsec-badge {
+              position: absolute;
+              background: white;
+              padding: 12px 20px;
+              border-radius: 30px;
+              box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              font-size: 14px;
+              font-weight: 500;
+              color: #333;
+              z-index: 3;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              animation: float 3s ease-in-out infinite;
+            }
+        
+            .bsec-badge1 { top: 15%; right: -5%; animation-delay: 0s; }
+            .bsec-badge2 { top: 40%; left: -5%; animation-delay: 0.5s; }
+            .bsec-badge3 { bottom: 35%; right: -5%; animation-delay: 1s; }
+            .bsec-badge4 { bottom: 10%; left: 10%; animation-delay: 1.5s; }
+        
+            .bsec-badge-icon {
+              width: 20px;
+              height: 20px;
+              background: #0d6efd;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-size: 12px;
+            }
+        
+            .bsec-right {
+              flex: 1;
+              padding: 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+        
+            .bsec-subtitle {
+              color: #2e2751;
+              font-size: 18px;
+              font-weight: 600;
+              letter-spacing: 2px;
+              margin-bottom: 30px;
+              display: inline-block;
+              padding: 8px 20px;
+              background: rgba(75, 68, 144, 0.08);
+              border-radius: 30px;
+              width: fit-content;
+            }
+        
+            .bsec-cards {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+        
+            .bsec-card {
+              background: #fff;
+              padding: 20px;
+              border-radius: 12px;
+              border: 1px solid #eee;
+              transition: all 0.3s ease;
+            }
+        
+            .bsec-card-icon {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              margin-bottom: 15px;
+            }
+        
+            .bsec-card-icon span {
+              background: #f0f7ff;
+              width: 45px;
+              height: 45px;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 16px;
+              color: #0d6efd;
+            }
+        
+            .bsec-card-icon h3 {
+              font-size: 22px;
+              color: #1a1a1a;
+              font-weight: 600;
+              margin: 0;
+            }
+        
+            .bsec-list {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+            }
+        
+            .bsec-list li {
+              color: #666;
+              padding-left: 25px;
+              position: relative;
+              margin-bottom: 8px;
+              line-height: 1.4;
+            }
+        
+            .bsec-list li::before {
+              content: '→';
+              position: absolute;
+              left: 0;
+              color: #0d6efd;
+            }
+        
+            .bsec-main-image:hover {
+              transform: scale(1.02);
+            }
+        
+            .bsec-badge:hover {
+              transform: translateY(-5px) scale(1.05);
+              background: #0d6efd;
+              color: white;
+            }
+        
+            .bsec-badge:hover .bsec-badge-icon {
+              background: white;
+              color: #0d6efd;
+            }
+        
+            .bsec-card:hover {
+              background: #f8faff;
+              transform: translateY(-5px);
+              box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+            }
+        
+            @keyframes float {
+              0% { transform: translateY(0px); }
+              50% { transform: translateY(-10px); }
+              100% { transform: translateY(0px); }
+            }
+        
+            @media (max-width: 991px) {
+              .bsec-content {
+                flex-direction: column;
+                gap: 40px;
+                min-height: auto;
+              }
+        
+              .bsec-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
     }
-    
-    .card-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+
+        
+              .bsec-image-stack {
+        height: 400px;
+        min-height: auto;
+        margin: 0 auto;
+        max-width: 600px;
     }
-    
-    .benefit-list li {
-        font-size: 16px !important;
+        
+              .bsec-image2,
+              .bsec-image3 {
+                width: 40%;
+                height: 180px;
+              }
+        
+              .bsec-badge {
+        width: auto;
+        position: relative;
+        margin: 10px;
+        display: inline-flex;
     }
-		}
-		</style>
+
+    .bsec-badge1, .bsec-badge2, .bsec-badge3, .bsec-badge4 {
+        position: static;
+        transform: none !important;
+    }
+        
+              .bsec-right {
+                padding: 20px 0;
+              }
+
+              .bsec-subtitle {
+        margin: 0 auto 30px;
+    }
+            }
+        
+            @media (max-width: 767px) {
+              .bsec-wrapper {
+                padding: 30px 15px;
+              }
+        
+              .bsec-image-stack {
+                height: 300px;
+              }
+        
+              .bsec-image2,
+              .bsec-image3 {
+                width: 35%;
+        height: 150px;
+              }
+        
+              .bsec-badge {
+        font-size: 13px;
+        padding: 8px 15px;
+        width: 100%;
+        justify-content: center;
+        margin: 8px 0;
+    }
+        
+    .bsec-subtitle {
+        font-size: 16px;
+        padding: 6px 15px;
+        text-align: center;
+    }
+        
+              .bsec-card {
+                padding: 15px;
+                margin-bottom: 15px;
+              }
+        
+              .bsec-card-icon {
+        gap: 10px;
+    }
+
+    .bsec-card-icon span {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+        
+    .bsec-card-icon h3 {
+        font-size: 18px;
+    }
+
+    .bsec-list li {
+        font-size: 14px;
+        padding-left: 20px;
+        margin-bottom: 8px;
+    }
+            }
+          </style>
+           
+        
 
 		<!-- 3 characteristics area ends here -->
 
@@ -1534,7 +1532,7 @@ function showCompanyTab(tab) {
 		<footer class="footer" style="background-image:url('img/map.png')">
 			<!-- Footer Top -->
 			<div class="footer-top" >
-				<div class="container" >
+				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-6 col-12">
 							<!-- Footer About -->		
@@ -1650,6 +1648,147 @@ function showCompanyTab(tab) {
 		<script src="js/magnific-popup.min.js"></script>
 		<!-- Active JS -->
 		<script src="js/active.js"></script>
+
+        <style>
+            /* ... existing styles ... */
+            
+            /* Mobile Responsive Fixes */
+            @media (max-width: 767px) {
+                /* Container adjustments */
+                .container {
+                    padding: 0 15px;
+                }
+            
+                /* Header and breadcrumb fixes */
+                .breadcrumbs .row {
+                    margin-left: 0;
+                }
+            
+                /* About section adjustments */
+                .about-us.section-space .row {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            
+                .about-hero-content {
+                    text-align: center;
+                    padding: 20px 0;
+                }
+            
+                .about-hero-content h1 {
+                    font-size: 28px;
+                    line-height: 1.3;
+                }
+            
+                .about-hero-content .lead {
+                    font-size: 16px;
+                }
+            
+                /* Company section fixes */
+                .company-section .container {
+                    padding: 0 15px;
+                }
+            
+                .company-image-wrapper {
+                    margin-bottom: 30px;
+                }
+            
+                .worker-company-img {
+                    width: 100%;
+                    left: 0;
+                }
+            
+                /* Services section adjustments */
+                .services-section .container {
+                    padding: 0 15px;
+                }
+            
+                .service-card {
+                    margin: 0 0 20px 0;
+                }
+            
+                /* Benefits section fixes */
+                .benefits-section {
+        padding: 30px 0;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left-side {
+        padding: 0;
+    }
+
+    .image-stack {
+        height: 300px;
+        margin-bottom: 60px;
+    }
+
+    .badge {
+        position: relative;
+        margin: 10px auto;
+        width: fit-content;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .badge-1, .badge-2, .badge-3, .badge-4 {
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+    }
+
+    .right-side {
+        padding: 0 15px;
+    }
+
+    .benefit-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card-icon h3 {
+        font-size: 18px;
+    }
+
+    .benefit-list li {
+        font-size: 15px !important;
+        padding-left: 20px;
+        margin-bottom: 6px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        padding: 6px 15px;
+        margin-bottom: 20px;
+    }
+}
+            
+                /* Footer adjustments */
+                .footer .container {
+                    padding: 0 15px;
+                }
+            
+                .footer-top {
+                    padding: 50px 0 20px;
+                }
+            
+            
+            /* Additional tablet view fixes */
+            @media (min-width: 768px) and (max-width: 991px) {
+                .container {
+                    padding: 0 30px;
+                }
+            
+                .company-section .container,
+                .benefits-section .container {
+                    padding: 0 30px;
+                }
+            }
+            </style>
 		
 		
 	</body>
