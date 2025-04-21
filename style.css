@@ -52,7 +52,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	Header CSS
 ========================================*/
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
   }
 .header{
 	position:relative;
@@ -199,7 +199,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	background: #333;
 }
 .middle-header {
-    background: #ffffff;
+    /* background: #ffffff;
     position: relative;
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
@@ -209,7 +209,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
+    padding: 5px 0;
+    background: #ffffff;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
 }
 /* Logo */
 .header .logo {
@@ -222,6 +229,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .header .img-logo {
     /* margin-top: 8px; */
 	/* margin-bottom: 11px; */
+    margin: 5px 0;
+}
+.header .img-logo img {
+    max-height: 60px;
+    width: auto;
 }
 .header .text-logo{
 	margin-top:30px;
@@ -261,11 +273,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         text-transform: uppercase;
         position: relative;
         display: block;
-        padding: 30px 0;
+        /* padding: 30px 0; */
+        padding: 20px 0;
+        line-height: 20px;
         color:#0d6efd;
         font-weight: 600;
         font-size: 14px;
-        font-family: 'Open Sans';
+        font-family: 'Manrope', sans-serif;
 }
 .header .nav li.active a,
 .header .nav li:hover a{
@@ -445,6 +459,82 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	color:#fff;
 	border-color:transparent;
 } */
+
+@media only screen and (max-width: 767px) {
+    .middle-header {
+        padding: 5px 0;
+    }
+
+    .header .img-logo img {
+        max-height: 45px;
+    }
+
+    .header .nav li a {
+        padding: 12px 0;
+    }
+}
+
+/* Mobile Menu Styles */
+@media only screen and (max-width: 991px) {
+    .middle-header {
+        position: relative;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header .navbar-collapse {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 999;
+        margin: 0;
+        padding: 0; /* Remove any additional spacing */
+        border-top: 1px solid #eee;
+    }
+
+    .header .nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header .nav li {
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .header .nav li a {
+        padding: 12px 15px;
+        margin: 0;
+    }
+
+    .header .nav li .sub-menu {
+        position: static;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        padding: 0 0 0 15px;
+        border-top: 1px solid #eee;
+    }
+
+    /* Logo adjustments */
+    .header .img-logo {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header .img-logo img {
+        max-height: 45px;
+    }
+}
  
 /* Header Search */
 .search-top {
@@ -1798,6 +1888,7 @@ blockquote {
     -moz-transition: all 0.6s ease;
     transition: all 0.6s ease;
     animation: fadeInDown 1s both 0.2s;
+    padding: 5px 0;
 }
 .header.style2.sticky .middle-header {
     background: #ffffff;
@@ -1806,7 +1897,8 @@ blockquote {
 	top: 10px;
 }
 .header.sticky .nav li a {
-    padding: 18px 0;
+    /* padding: 18px 0; */
+    padding: 15px 0;
 }
 .header.sticky .text-logo {
     margin-top: 18px;
@@ -1815,8 +1907,9 @@ blockquote {
     line-height: 60px;
 }
 .header.sticky .img-logo {
-    margin-top: 6px;
-    margin-bottom: 6px;
+    /* margin-top: 6px;
+    margin-bottom: 6px; */
+    margin: 5px 0;
 }
 .header.style2.sticky .middle-inner {
     padding: 0;
@@ -2617,7 +2710,7 @@ p.has-large-font-size {
 }
 .features-main h2::before {
 	content: "";
-	poadding: ;
+	/* poadding: ; */
 	position: absolute;
 	left: 0;
 	width: 30px;
@@ -4678,7 +4771,7 @@ background:#0d6efd;
 }
 .img-feature .experience:hover .small-icon{
 	opacity:1;
-	visibility: ;
+	/* visibility: ; */
 	color:#0d6efd;
 }
 
@@ -4854,7 +4947,7 @@ background:#0d6efd;
 }
 .underline::after {
     content: '';
-    background: #ffffff; !important;
+    background: #0d6efd !important;
     width: 7%;
     height: 4px;
     bottom: -10px;
@@ -4863,7 +4956,7 @@ background:#0d6efd;
   }
 
   .bg-light-gray {
-    background-color: #0d6efd;
+    background-color: #D0D9E8;
 }
 
 /* img css */
@@ -5249,7 +5342,7 @@ border-radius: 6px !important;
      /* margin-bottom: 10px; */
      text-align: center;
      /* padding-left: 350px; */
-     background-color:#0d6efd;
+     background-color:#2A4F74;
      
 }
 
@@ -5270,13 +5363,13 @@ th, td {
 }
 
 th {
-    background-color:#0d6efd;
+    background-color:#2A4F74;
     color: white;
     font-weight: bold;
 }
 
 td {
-    background-color:#0d6efd;
+    background-color:#D0D9E8;
 }
 
 .title {
